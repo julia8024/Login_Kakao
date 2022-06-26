@@ -1,5 +1,3 @@
-Kakao.init('f0c454152536914ff6dfbd2e57914ce8');  // 발급받은 키로 초기화
-console.log(Kakao.isInitialized());  // 키 초기화 확인
 function kakaoLogin() {
     Kakao.Auth.login({
         scope: 'profile_nickname',
@@ -12,7 +10,7 @@ function kakaoLogin() {
                     console.log(kakao_account)
                 }
             });
-            window.location.href='./main.html';
+            // window.location.href='./main.html';
         },
         fail: function(error) {
             console.log(error);
