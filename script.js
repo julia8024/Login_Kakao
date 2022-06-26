@@ -10,7 +10,7 @@ function kakaoLogin() {
                     console.log(kakao_account)
                 }
             });
-            // window.location.href='./main.html';
+            window.location.href='/Login_kakao/main.html';
         },
         fail: function(error) {
             console.log(error);
