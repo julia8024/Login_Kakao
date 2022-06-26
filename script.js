@@ -20,6 +20,9 @@ function kakaoLogin() {
 }
 
 function kakaoLogout() {
+    Kakao.init('f0c454152536914ff6dfbd2e57914ce8');  // 발급받은 키로 초기화
+    console.log(Kakao.isInitialized());  // 키 초기화 확인
+    // 토큰이 있는지 확인
     if (Kakao.Auth.getAccessToken()) {
         Kakao.API.request({
             url: '/v1/user/unlink',
@@ -31,6 +34,6 @@ function kakaoLogout() {
             },
         })
         Kakao.Auth.setAccessToken(undefined)
-        window.location.href='/Login_kakao/main.html';
+        window.location.href='/Login_kakao/index.html';
     }
 }
