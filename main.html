@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="./script.js"></script>
 </head>
 <body onload="changeUserName()">
     <section>
@@ -13,7 +15,5 @@
         <p><span id="nickname"></span> 님 안녕하세요.</p>
         <div id="kakao_logout" onclick="kakaoLogout()">카카오 로그아웃</div>
     </section>
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script src="./script.js"></script>
 </body>
 </html>
