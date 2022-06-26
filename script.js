@@ -5,10 +5,9 @@ function kakaoLogin() {
             console.log(response)
             Kakao.API.request({
                 url: '/v2/user/me',
-                success: (res) => {
-                    const kakao_account = res.kakao_account;
-                    console.log(kakao_account)
-                    Kakao.Auth.setAccessToken(ACCESS_TOKEN);
+                success: function() {
+                    var ACCESS_TOKEN = Kakao.Auth.getAccessToken();  // 액세스 토큰 할당
+                    Kakao.Auth.setAccessToken(ACCESS_TOKEN);  // 액세스 토큰 사용하게 등록
                 }
             });
             window.location.href='/Login_kakao/main.html';
