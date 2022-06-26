@@ -1,4 +1,4 @@
-function changeUserName(nickname);
+var nickname;
 
 function kakaoLogin() {
     Kakao.Auth.login({
