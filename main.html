@@ -7,7 +7,7 @@
     <title>Main Page</title>
     <link href="./style.css" rel="stylesheet" type="text/css"/>
 </head>
-<body>
+<body onload="changeUserName()">
     <section>
         <h1>LOGIN SUCCESS</h1>
         <p><span id="nickname"></span> 님 안녕하세요.</p>
@@ -15,7 +15,7 @@
     </section>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
-        function changeUserName(nickname) {
+        function changeUserName() {
             document.querySelector("#nickname").innerHTML = nickname;
         }
     </script>
