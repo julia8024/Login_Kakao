@@ -11,6 +11,7 @@ function kakaoLogin() {
                     var ACCESS_TOKEN = Kakao.Auth.getAccessToken();  // 액세스 토큰 할당
                     Kakao.Auth.setAccessToken(ACCESS_TOKEN);  // 액세스 토큰 사용하게 등록
                     nickname = res.properties['nickname'];
+                    console.log("dddd : " + nickname);
                 }
             });
             // window.location.href='/Login_kakao/main.html';
