@@ -1,0 +1,43 @@
+/* 로고 폰트 */
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    list-style-type: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Cafe24SsurroundAir';
+    width: 100vw;
+}
+section {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+h1 {
+    margin: 100px auto;
+    text-align: center;
+}
+
+#kakao_login, #kakao_logout {
+    border-radius: 10px;
+    background-color: rgb(255, 240, 72);
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 40px auto;
+    width: fit-content;
+    cursor: pointer;
+}
+#kakao_login:hover, #kakao_logout:hover {
+    background-color: black;
+    color: rgb(255, 240, 72);
+}

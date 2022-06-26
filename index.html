@@ -5,35 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Site</title>
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
     <style>
-        /* 로고 폰트 */
-        @font-face {
-            font-family: 'Cafe24SsurroundAir';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        * {
-            list-style-type: none;
-            text-decoration: none;
-            border-collapse: collapse;
-            margin: 0px;
-            padding: 0px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Cafe24SsurroundAir';
-            width: 100vw;
-        }
-        section {
-            width: fit-content;
-            height: fit-content;
-            margin: auto;
-        }
-        h1 {
-            margin: 100px auto;
-            text-align: center;
-        }
         #kakao_login {
             border-radius: 10px;
             background-color: rgb(255, 240, 72);
@@ -56,29 +29,6 @@
         <div id="kakao_login" onclick="kakaoLogin()">카카오로 로그인</div>
     </section>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script>
-        Kakao.init('f0c454152536914ff6dfbd2e57914ce8');  // 발급받은 키로 초기화
-        console.log(Kakao.isInitialized());  // 키 초기화 확인
-        function kakaoLogin() {
-            Kakao.Auth.login({
-                scope: 'profile_nickname',
-                success: function(response) {
-                    console.log(response)
-                    Kakao.API.request({
-                        url: '/v2/user/me',
-                        success: (res) => {
-                            const kakao_account = res.kakao_account;
-                            console.log(kakao_account)
-                        }
-                    });
-                    // window.location.href='/main.html';
-                },
-                fail: function(error) {
-                    console.log(error);
-                }
-            });
-        }
-    </script>
-
+    <script src="./script.js"></script>
 </body>
 </html>
