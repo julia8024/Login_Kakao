@@ -5,10 +5,10 @@ function kakaoLogin() {
             console.log(response)
             Kakao.API.request({
                 url: '/v2/user/me',
-                success: function() {
+                success: function(res) {
                     var ACCESS_TOKEN = Kakao.Auth.getAccessToken();  // 액세스 토큰 할당
                     Kakao.Auth.setAccessToken(ACCESS_TOKEN);  // 액세스 토큰 사용하게 등록
-                    var nickname = 'profile_nickname';
+                    var nickname = res.id;
                     document.querySelector("#nickname").innerHTML = nickname;
                     console.log(nickname);
                 }
