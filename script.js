@@ -10,7 +10,7 @@ function kakaoLogin() {
                     console.log(kakao_account)
                 }
             });
-            window.location.href='/Login_kakao/main.html';
+            // window.location.href='/Login_kakao/main.html';
         },
         fail: function(error) {
             console.log(error);
@@ -19,12 +19,16 @@ function kakaoLogin() {
 }
 
 function kakaoLogout() {
-    if (!Kakao.Auth.getAccessToken()) {
-        console.log("Not logged in");
-        return;
+    if (Kakao.Auth.getAccessToken()) {
+        Kakao.API.request({
+            url: '/v1/user/unlink',
+            success: function (response) {
+                console.log(response)
+            },
+            fail: function (error) {
+                console.log(error)
+            },
+        })
+        Kakao.Auth.setAccessToken(undefined)
     }
-    Kakao.Auth.logout(function(response) {
-        alert(response + " logout");
-        window.location.href="/Login_kakao/index.html";
-    });
 }
