@@ -8,6 +8,7 @@ function kakaoLogin() {
                 success: (res) => {
                     const kakao_account = res.kakao_account;
                     console.log(kakao_account)
+                    Kakao.Auth.setAccessToken(ACCESS_TOKEN);
                 }
             });
             window.location.href='/Login_kakao/main.html';
