@@ -41,4 +41,7 @@ function kakaoLogout() {
 
 function changeUserName() {
     document.querySelector("#nickname").innerHTML = nickname.value;
+    console.log("nickname.value: " + nickname.value);
+    console.log("nickname : " + nickname);
+    console.log("nickname.toString() : " + nickname.toString());
 }
