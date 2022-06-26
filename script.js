@@ -1,3 +1,5 @@
+var nickname;
+
 function kakaoLogin() {
     Kakao.Auth.login({
         scope: 'profile_nickname',
