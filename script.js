@@ -8,6 +8,8 @@ function kakaoLogin() {
                 success: function() {
                     var ACCESS_TOKEN = Kakao.Auth.getAccessToken();  // 액세스 토큰 할당
                     Kakao.Auth.setAccessToken(ACCESS_TOKEN);  // 액세스 토큰 사용하게 등록
+                    var nickname = 'profile_nickname';
+                    document.querySelector("#nickname").innerHTML = nickname;
                 }
             });
             // window.location.href='/Login_kakao/main.html';

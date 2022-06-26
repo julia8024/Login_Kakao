@@ -26,7 +26,12 @@ h1 {
     margin: 100px auto;
     text-align: center;
 }
-
+#nickname {
+    color: #878787;
+}
+p {
+    text-align: center;
+}
 #kakao_login, #kakao_logout {
     border-radius: 10px;
     background-color: rgb(255, 240, 72);
