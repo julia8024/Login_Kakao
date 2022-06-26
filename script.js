@@ -1,5 +1,3 @@
-var nickname;
-
 function kakaoLogin() {
     Kakao.Auth.login({
         scope: 'profile_nickname',
@@ -39,4 +37,8 @@ function kakaoLogout() {
         Kakao.Auth.setAccessToken(undefined)
         window.location.href='/Login_kakao/index.html';
     }
+}
+
+function changeUserName() {
+    document.querySelector("#nickname").innerHTML = nickname.value;
 }
