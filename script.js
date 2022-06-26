@@ -10,6 +10,7 @@ function kakaoLogin() {
                     Kakao.Auth.setAccessToken(ACCESS_TOKEN);  // 액세스 토큰 사용하게 등록
                     var nickname = 'profile_nickname';
                     document.querySelector("#nickname").innerHTML = nickname;
+                    console.log(nickname);
                 }
             });
             // window.location.href='/Login_kakao/main.html';
