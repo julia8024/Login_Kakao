@@ -61,7 +61,7 @@
         console.log(Kakao.isInitialized());  // 키 초기화 확인
         function kakaoLogin() {
             Kakao.Auth.login({
-                scope: 'nickname',
+                scope: 'profile_nickname',
                 success: function(response) {
                     console.log(response)
                     Kakao.API.request({
