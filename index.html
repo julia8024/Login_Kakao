@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Site</title>
     <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('f0c454152536914ff6dfbd2e57914ce8');  // 발급받은 키로 초기화
+        console.log(Kakao.isInitialized());  // 키 초기화 확인
+    </script>
+    <script src="./script.js"></script>
 </head>
 <body>
     <section>
@@ -13,11 +19,5 @@
         <p><span id="nickname"></span> 님 안녕하세요.</p>
         <div id="kakao_login" onclick="changeText()">카카오로 로그인</div>
     </section>
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script>
-        Kakao.init('f0c454152536914ff6dfbd2e57914ce8');  // 발급받은 키로 초기화
-        console.log(Kakao.isInitialized());  // 키 초기화 확인
-    </script>
-    <script src="./script.js"></script>
 </body>
 </html>
