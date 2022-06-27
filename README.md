@@ -1,3 +1,11 @@
+# Login_kakao
+2022 Primitive 동아리 학년별 문제풀이
+- 3학년 : IDP(네이버, 카카오, 구글 등)를 이용한 로그인 기능 구현
+- 20학번 장세희
+- 웹페이지 바로가기 : https://julia8024.github.io/Login_kakao/
+
+<br><br>
+
 # 카카오로 로그인 구현
 
 ### 1. 카카오 로그인 API 사용을 위한 어플리케이션 설정
@@ -11,13 +19,13 @@
 
 4. 카카오 로그인 활성화
 	- 등록하러 가기 클릭
-	<img width="967" alt="스크린샷 2022-06-27 오후 12 53 33" src="https://user-images.githubusercontent.com/79641953/175856783-7b8b9c6b-396f-47fc-a638-74ffe66d7478.png">
+		<img width="967" alt="스크린샷 2022-06-27 오후 12 53 33" src="https://user-images.githubusercontent.com/79641953/175856783-7b8b9c6b-396f-47fc-a638-74ffe66d7478.png">
 	- 활성화 버튼 ON
-	<img width="964" alt="스크린샷 2022-06-27 오후 12 53 52" src="https://user-images.githubusercontent.com/79641953/175856807-dcef3471-bc80-4df6-b254-ddff2bf45c71.png">
+		<img width="964" alt="스크린샷 2022-06-27 오후 12 53 52" src="https://user-images.githubusercontent.com/79641953/175856807-dcef3471-bc80-4df6-b254-ddff2bf45c71.png">
 
 5. 동의항목 활성화
 	- 닉네임 값만 가져올 것이기 때문에 닉네임 항목만 활성화
-	<img width="1440" alt="스크린샷 2022-06-27 오후 1 01 06" src="https://user-images.githubusercontent.com/79641953/175857435-4e6110eb-e0d6-4780-8d0e-2083651bd70b.png">
+		<img width="1440" alt="스크린샷 2022-06-27 오후 1 01 06" src="https://user-images.githubusercontent.com/79641953/175857435-4e6110eb-e0d6-4780-8d0e-2083651bd70b.png">
 
 ### 2. 카카오 로그인 API 활용
 
