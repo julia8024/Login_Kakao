@@ -9,10 +9,10 @@
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script src="./script.js"></script>
 </head>
-<body onload="changeUserName()">
+<body>
     <section>
         <h1>LOGIN SUCCESS</h1>
-        <p><span id="nickname"></span> 님 안녕하세요.</p>
+        <p><span id="nickname" onload="changeUserName()"></span> 님 안녕하세요.</p>
         <div id="kakao_logout" onclick="kakaoLogout()">카카오 로그아웃</div>
     </section>
 </body>
