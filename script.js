@@ -50,13 +50,13 @@ function changeUserName() {
 function changeText() {
     if (!flag) {
         document.querySelector("h1").innerHTML = "LOGIN SUCCESS";
-        document.querySelector("kakao_login").innerHTML = "카카오 로그아웃";
+        document.querySelector("#kakao_login").innerHTML = "카카오 로그아웃";
         document.querySelector("p").style.display = "block";
         flag = true;
         kakaoLogin();
     } else {
         document.querySelector("h1").innerHTML = "LOGIN";
-        document.querySelector("kakao_login").innerHTML = "카카오로 로그인";
+        document.querySelector("#kakao_login").innerHTML = "카카오로 로그인";
         document.querySelector("p").style.display = "none";
         flag = false;
         kakaoLogout();
