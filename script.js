@@ -1,4 +1,5 @@
 var nickname;
+var flag = false;
 
 function kakaoLogin() {
     Kakao.Auth.login({
@@ -12,10 +13,9 @@ function kakaoLogin() {
                     Kakao.Auth.setAccessToken(ACCESS_TOKEN);  // 액세스 토큰 사용하게 등록
                     nickname = res.properties['nickname'];
                     console.log("dddd : " + nickname);
+                    changeUserName();
                 }
             });
-            // window.location.href='/Login_kakao/main.html';
-            window.open('/Login_kakao/main.html', "_blank");
         },
         fail: function(error) {
             console.log(error);
@@ -38,7 +38,6 @@ function kakaoLogout() {
             },
         })
         Kakao.Auth.setAccessToken(undefined)
-        window.location.href='/Login_kakao/index.html';
     }
 }
 
@@ -46,4 +45,20 @@ function changeUserName() {
     document.querySelector("#nickname").innerHTML = nickname;
     console.log("nickname : " + nickname);
     console.log("nickname.toString() : " + nickname.toString());
+}
+
+function changeText() {
+    if (!flag) {
+        document.querySelector("h1").innerHTML = "LOGIN SUCCESS";
+        document.querySelector("kakao_login").innerHTML = "카카오 로그아웃";
+        document.querySelector("p").style.display = "block";
+        flag = true;
+        kakaoLogin();
+    } else {
+        document.querySelector("h1").innerHTML = "LOGIN";
+        document.querySelector("kakao_login").innerHTML = "카카오로 로그인";
+        document.querySelector("p").style.display = "none";
+        flag = false;
+        kakaoLogout();
+    }
 }

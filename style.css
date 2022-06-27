@@ -31,8 +31,9 @@ h1 {
 }
 p {
     text-align: center;
+    display: none;
 }
-#kakao_login, #kakao_logout {
+#kakao_login {
     border-radius: 10px;
     background-color: rgb(255, 240, 72);
     color: black;
@@ -42,7 +43,7 @@ p {
     width: fit-content;
     cursor: pointer;
 }
-#kakao_login:hover, #kakao_logout:hover {
+#kakao_login:hover {
     background-color: black;
     color: rgb(255, 240, 72);
 }
