@@ -127,3 +127,4 @@ function changeUserName() {
 ```
 
 ### 실행 화면
+<img width="1335" alt="스크린샷 2022-06-27 오후 1 53 12" src="https://user-images.githubusercontent.com/79641953/175862642-a57b96d5-2598-48f6-856f-f935de0c267e.png">
